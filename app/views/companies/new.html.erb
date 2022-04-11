@@ -1,0 +1,24 @@
+<%#= form_with model: @companies do |form|%>
+<div>
+	 <%#=form.label :company_name%>
+	 <%#=form.text_field :company_name %>
+</div>
+<div>
+	 <%#=form.label :job_title%>
+	 <%#=form.text_field :job_title %>
+</div>
+ <div>
+	 <%#=form.label :experience%>
+	 <%#=form.text_field :experience%>
+ </div>
+ <div>
+	 <%#=form.label :position%>
+	 <%#=form.text_field :position %>
+ </div>
+ <div>
+    <%#=form.submit%>
+</div>
+<%#end%>
+ @products = Product.search(params[:query].presence ? params[:query] : '*',size: 500
+
+

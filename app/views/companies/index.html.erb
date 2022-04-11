@@ -1,0 +1,45 @@
+<center><%#= link_to 'add jobs',new_company_path%></center>
+
+
+      <center><h1>Welcome to Elastic search Job Web portal</h1></center>
+
+<%#= form_for :search_companies, search_companies_path, method: :get do |form| %>
+<%= form_tag  companies_path, role: "search", method: :get do %>
+<%= text_field_tag :query , params[:query]%>
+<%= button_tag 'Search',name: nil,class: "btn btn-default btn-primary" %></center>
+<% end %>
+
+<% unless @products.nil? %>
+  <% if @products.empty? %>
+    <center><h2>Sorry no Comapnies found</h2></center>
+  <% else %>
+    <h2>Search results</h2>
+    </table>
+    <%end%>
+     <%end%>
+<table style="width: 100%;">
+      <thead>
+         <tr>
+           <th>company_name</th>
+           <th>technology</th>
+           <th>experience</th>
+           <th>position</th>
+    
+         </tr>
+      </thead>
+
+      <tbody>
+        <%  @products.each do |p| %>
+          <tr>
+           <td><%= p.company_name %></td>
+            <td><%= p.technology %></td>
+            <td><%= p.experience%></td>
+            <td><%= p.position%></td>
+         
+                <td><%#= link_to 'View',   company_path(company.id) %></td>
+          </tr>
+        <% end %>
+         <%#=will_paginate @products %>
+        
+      <tbody>
+    </table>
