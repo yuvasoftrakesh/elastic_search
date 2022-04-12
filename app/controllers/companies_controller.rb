@@ -2,7 +2,7 @@ class CompaniesController < ApplicationController
 	def index
 	 #@companies = Companie.all
 	  #@companies =  Companie.search(params[:query].presence ? params[:query] : '*').records
-	 @products = Product.paginate(page: params[:page])
+	# @products = Product.paginate(page: params[:page])
      @products = Product.search(params[:query].presence ? params[:query] : '*', size: 500).records
     # @products  = Product.paginate(:page => params[:page], :per_page=>17)
 	end

@@ -24,8 +24,10 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'elasticsearch-rails', '~> 6.0'
 gem 'elasticsearch-model','~> 6.0'
-gem 'will_paginate', '~> 3.3'
-gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+#gem 'psych'
+gem 'psych', '~> 2.0', '>= 2.0.17'
+#gem 'will_paginate', '~> 3.3'
+#gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
