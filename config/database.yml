@@ -1,18 +1,18 @@
 development:
- database: ajax1
- adapter: postgresql
- username: postgres
- password: 12345678
- host: localhost
- pool: 5
- timeout: 5000
+database: ajax1
+adapter: postgresql
+username: postgres
+password: 12345678
+host: localhost
+pool: 5
+timeout: 5000
 
 
 production:
- adapter: postgresql
- encoding: unicode
- database: ajax1
- pool: 5
- username: postgres
- password: 12345678
- timeout: 5000
+adapter: postgresql
+encoding: unicode
+database: ajax1
+pool: 5
+username: postgres
+password: 12345678
+timeout: 5000
